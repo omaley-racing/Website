@@ -89,29 +89,32 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 1rem;
 }
 
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 3rem;
+  width: 4.35rem;
   aspect-ratio: 1;
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   background:
-    linear-gradient(145deg, rgba(21, 145, 231, 0.85), rgba(255, 109, 45, 0.8)),
+    radial-gradient(circle at 20% 20%, rgba(21, 145, 231, 0.18), transparent 48%),
+    radial-gradient(circle at 80% 80%, rgba(255, 109, 45, 0.14), transparent 42%),
     url("images/logo.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
   font-family: "Oswald", Impact, sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.08em;
 }
 
 .brand-mark-text {
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  font-size: 0;
 }
 
 .brand-text {
@@ -168,10 +171,10 @@ ul {
   display: grid;
   align-items: center;
   background:
-    linear-gradient(120deg, rgba(4, 9, 15, 0.55), rgba(4, 10, 18, 0.45)),
+    linear-gradient(120deg, rgba(4, 9, 15, 0.28), rgba(4, 10, 18, 0.24)),
     url("images/hero.jpg"),
     linear-gradient(180deg, #09131f, #07111c);
-  background-position: center;
+  background-position: center 42%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -207,11 +210,11 @@ ul {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(120deg, rgba(4, 9, 15, 0.88) 14%, rgba(7, 17, 28, 0.66) 52%, rgba(4, 10, 18, 0.94) 100%),
+    linear-gradient(120deg, rgba(4, 9, 15, 0.68) 12%, rgba(7, 17, 28, 0.40) 50%, rgba(4, 10, 18, 0.74) 100%),
     repeating-linear-gradient(
       125deg,
-      rgba(255, 255, 255, 0.02) 0,
-      rgba(255, 255, 255, 0.02) 2px,
+      rgba(255, 255, 255, 0.012) 0,
+      rgba(255, 255, 255, 0.012) 2px,
       transparent 2px,
       transparent 18px
     );
