@@ -1120,14 +1120,7 @@ tbody tr:hover {
 }
 
 .gallery-photo-card span {
-  position: absolute;
-  left: 1rem;
-  bottom: 0.9rem;
-  z-index: 1;
-  font-family: "Oswald", Impact, sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  display: none;
 }
 
 .video-card {
