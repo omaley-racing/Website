@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">YouTube Videos Cover</title>
+  <desc id="desc">Stylized racing-inspired cover artwork for the YouTube Videos gallery section.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08111c"/>
+      <stop offset="50%" stop-color="#10233a"/>
+      <stop offset="100%" stop-color="#1d0f18"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="28%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#32b4ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#32b4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowWarm" cx="76%" cy="78%" r="42%">
+      <stop offset="0%" stop-color="#ff6d2d" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff6d2d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17283d" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#0b1624" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1591e7"/>
+      <stop offset="100%" stop-color="#32b4ff"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6d2d"/>
+      <stop offset="100%" stop-color="#ff965a"/>
+    </linearGradient>
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glowBlue)"/>
+  <rect width="1600" height="900" fill="url(#glowWarm)"/>
+
+  <g opacity="0.12">
+    <path d="M-120 780 L620 140" stroke="#ffffff" stroke-width="3"/>
+    <path d="M20 860 L760 220" stroke="#ffffff" stroke-width="2"/>
+    <path d="M220 900 L930 300" stroke="#ffffff" stroke-width="2"/>
+    <path d="M1040 120 L1580 620" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.14">
+    <rect x="-120" y="678" width="620" height="14" rx="7" transform="rotate(-18 -120 678)" fill="#32b4ff"/>
+    <rect x="-60" y="726" width="760" height="8" rx="4" transform="rotate(-18 -60 726)" fill="#ffffff"/>
+    <rect x="840" y="176" width="620" height="14" rx="7" transform="rotate(18 840 176)" fill="#ff6d2d"/>
+  </g>
+
+  <g>
+    <rect x="860" y="170" width="500" height="300" rx="30" fill="url(#card)" stroke="rgba(255,255,255,0.14)"/>
+    <rect x="900" y="210" width="420" height="220" rx="24" fill="#09131f" stroke="rgba(255,255,255,0.08)"/>
+    <rect x="928" y="238" width="364" height="164" rx="18" fill="#0d1b2b"/>
+    <circle cx="1098" cy="320" r="70" fill="#ff002f" filter="url(#softBlur)" opacity="0.22"/>
+    <path d="M1064 275 C1048 265 1030 277 1030 296 L1030 344 C1030 363 1048 375 1064 365 L1142 321 C1158 312 1158 288 1142 279 Z" fill="#ffffff"/>
+  </g>
+
+  <g>
+    <path d="M194 598 C286 480 450 430 612 456 C720 474 808 526 908 528 C980 529 1068 512 1160 446" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M222 642 C326 556 474 526 608 548 C710 565 796 616 892 620 C986 624 1060 590 1148 540" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="236" cy="646" r="24" fill="#09131f" stroke="url(#warm)" stroke-width="7"/>
+    <circle cx="1096" cy="558" r="28" fill="#09131f" stroke="url(#accent)" stroke-width="7"/>
+  </g>
+
+  <g>
+    <rect x="170" y="170" width="470" height="240" rx="32" fill="rgba(8,17,28,0.68)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="210" y="250" fill="#32b4ff" font-family="Oswald, Arial, sans-serif" font-size="40" letter-spacing="8">VIDEO SECTION</text>
+    <text x="210" y="336" fill="#f4f7fb" font-family="Oswald, Arial, sans-serif" font-size="112" font-weight="700">YOUTUBE</text>
+    <text x="210" y="398" fill="#f4f7fb" font-family="Oswald, Arial, sans-serif" font-size="112" font-weight="700">VIDEOS</text>
+    <text x="212" y="456" fill="#b8c5d6" font-family="Space Grotesk, Arial, sans-serif" font-size="30">Race clips. Event recaps. Team motion.</text>
+  </g>
+</svg>
