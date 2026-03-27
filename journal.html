@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Race recaps, updates, and stories from O'Maley Racing.">
+  <meta name="theme-color" content="#07111c">
+  <title>Journal | O'Maley Racing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="O'Maley Racing home">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mark-text">OR</span></span>
+        <span class="brand-text"><strong>O'Maley Racing</strong><span>Open wheel. Hill climbs. Dirt.</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journal.html" aria-current="page">Journal</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow">Team Journal</p>
+        <h1>Stories Worth Following</h1>
+        <p class="page-intro">
+          Use this section for race recaps, testing updates, sponsor announcements, and behind-the-scenes stories.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card blog-card">
+            <div class="media-frame media-weekend" role="img" aria-label="Race weekend recap photo area">
+              <img src="images/race-weekend.jpg" alt="" class="media-image image-weekend" onerror="this.style.display='none'">
+              <span>Weekend Recap</span>
+            </div>
+            <div class="card-body">
+              <h3>Race Weekend Recap</h3>
+              <p>Publish a clear story on what happened over the weekend, what worked, what did not, and what comes next.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card">
+            <div class="media-frame media-scenes" role="img" aria-label="Behind the scenes photo area">
+              <img src="images/behind-scenes.jpg" alt="" class="media-image image-scenes" onerror="this.style.display='none'">
+              <span>Behind The Scenes</span>
+            </div>
+            <div class="card-body">
+              <h3>Behind The Scenes</h3>
+              <p>Give fans and sponsors a closer look at prep, setup, maintenance, and race-day work.</p>
+            </div>
+          </article>
+
+          <article class="card blog-card">
+            <div class="media-frame media-spotlight" role="img" aria-label="Partner spotlight photo area">
+              <img src="images/partner-spotlight.jpg" alt="" class="media-image image-spotlight" onerror="this.style.display='none'">
+              <span>Partner Spotlight</span>
+            </div>
+            <div class="card-body">
+              <h3>Partner Spotlight</h3>
+              <p>Feature the companies backing O'Maley Racing and how they help the team compete.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><span id="copyright-year">2026</span> O'Maley Racing. All rights reserved.</p>
+      <p>Open wheel. Hill climbs. Dirt. Real racing.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

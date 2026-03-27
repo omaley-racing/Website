@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the drivers of O'Maley Racing.">
+  <meta name="theme-color" content="#07111c">
+  <title>Team | O'Maley Racing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="O'Maley Racing home">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mark-text">OR</span></span>
+        <span class="brand-text"><strong>O'Maley Racing</strong><span>Open wheel. Hill climbs. Dirt.</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="team.html" aria-current="page">Team</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <p class="eyebrow">Team</p>
+        <h1>Driver Lineup</h1>
+        <p class="page-intro">
+          From pavement hill climbs to dirt competition, each driver contributes to the team's performance and story.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-4">
+          <article class="card team-member">
+            <div class="portrait-frame portrait-rodney">
+              <img src="images/rodney-omaley.jpg" alt="Rodney O'Maley" class="portrait-image portrait-image-rodney" onerror="this.style.display='none'">
+              <span class="portrait-number">#65</span>
+            </div>
+            <div class="card-body">
+              <h3>Rodney O'Maley</h3>
+              <p class="driver-number">Lead Driver</p>
+              <p>
+                Rodney leads the O'Maley Racing program in open-wheel competition with a focus on performance,
+                development, and representing the team at a high level.
+              </p>
+            </div>
+          </article>
+
+          <article class="card team-member">
+            <div class="portrait-frame portrait-earl">
+              <img src="images/earl-omaley.jpg" alt="Earl O'Maley" class="portrait-image portrait-image-earl" onerror="this.style.display='none'">
+              <span class="portrait-number">#19</span>
+            </div>
+            <div class="card-body">
+              <h3>Earl O'Maley</h3>
+              <p class="driver-number">Driver</p>
+              <p>Earl brings competitive experience and versatility across hill climb and dirt racing environments.</p>
+            </div>
+          </article>
+
+          <article class="card team-member">
+            <div class="portrait-frame portrait-david-meyer">
+              <img src="images/david-meyer.jpg" alt="David Meyer" class="portrait-image portrait-image-david-meyer" onerror="this.style.display='none'">
+              <span class="portrait-number">#24</span>
+            </div>
+            <div class="card-body">
+              <h3>David Meyer</h3>
+              <p class="driver-number">Driver</p>
+              <p>David adds depth to the lineup with speed, commitment, and valuable experience in multi-driver competition.</p>
+            </div>
+          </article>
+
+          <article class="card team-member">
+            <div class="portrait-frame portrait-david-velleff">
+              <img src="images/david-velleff.jpg" alt="David Velleff" class="portrait-image portrait-image-david-velleff" onerror="this.style.display='none'">
+              <span class="portrait-number">#3</span>
+            </div>
+            <div class="card-body">
+              <h3>David Velleff</h3>
+              <p class="driver-number">Driver</p>
+              <p>David helps showcase the team's range across multiple cars, events, and racing disciplines.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><span id="copyright-year">2026</span> O'Maley Racing. All rights reserved.</p>
+      <p>Open wheel. Hill climbs. Dirt. Real racing.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
