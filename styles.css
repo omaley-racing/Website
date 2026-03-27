@@ -1019,11 +1019,45 @@ tbody tr:hover {
 }
 
 .social-icon {
-  font-family: "Oswald", Impact, sans-serif;
-  font-size: 0.88rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0;
+}
+
+.social-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.social-icon::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social-link[aria-label*="Facebook"] .social-icon::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.5V3.8c-.3 0-1.2-.1-2.4-.1-2.4 0-4 1.5-4 4.2V10H8v3h2.8v8h2.7Z'/%3E%3C/svg%3E");
+}
+
+.social-link[aria-label*="Instagram"] .social-icon::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 1.8A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9Zm9.75 1.35a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1ZM12 7.35A4.65 4.65 0 1 1 7.35 12 4.66 4.66 0 0 1 12 7.35Zm0 1.8A2.85 2.85 0 1 0 14.85 12 2.85 2.85 0 0 0 12 9.15Z'/%3E%3C/svg%3E");
+}
+
+.social-link[aria-label*="YouTube"] .social-icon::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M21.6 7.2a2.96 2.96 0 0 0-2.08-2.1C17.68 4.5 12 4.5 12 4.5s-5.68 0-7.52.6A2.96 2.96 0 0 0 2.4 7.2 31.3 31.3 0 0 0 1.8 12a31.3 31.3 0 0 0 .6 4.8 2.96 2.96 0 0 0 2.08 2.1c1.84.6 7.52.6 7.52.6s5.68 0 7.52-.6a2.96 2.96 0 0 0 2.08-2.1 31.3 31.3 0 0 0 .6-4.8 31.3 31.3 0 0 0-.6-4.8ZM10.2 15.3V8.7l5.7 3.3-5.7 3.3Z'/%3E%3C/svg%3E");
+}
+
+.social-link[aria-label$=" on X"] .social-icon::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M18.9 3H22l-6.77 7.74L23 21h-6.08l-4.76-6.22L6.72 21H3.6l7.24-8.28L1.4 3h6.23l4.3 5.68L18.9 3Zm-1.07 16.17h1.69L6.7 4.74H4.89l12.94 14.43Z'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 1080px) {
