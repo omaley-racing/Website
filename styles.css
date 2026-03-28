@@ -1149,13 +1149,25 @@ tbody tr:hover {
   align-content: center;
 }
 
-.video-about-statement {
+.video-about-card .video-about-statement {
   color: var(--text);
   font-family: "Oswald", Impact, sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.08;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.statement-link {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.statement-link:hover,
+.statement-link:focus-visible {
+  color: #ffffff;
 }
 
 .gallery-tile {
