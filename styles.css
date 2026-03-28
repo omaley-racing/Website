@@ -1152,10 +1152,10 @@ tbody tr:hover {
 .video-about-card .video-about-statement {
   color: var(--text);
   font-family: "Oswald", Impact, sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.08;
+  font-size: clamp(1.35rem, 2.2vw, 1.95rem);
+  line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   margin: 0;
 }
 
