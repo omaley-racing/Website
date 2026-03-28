@@ -1149,12 +1149,13 @@ tbody tr:hover {
   align-content: center;
 }
 
-.video-about-lead {
-  max-width: 28rem;
-  color: #eef5ff;
-  font-size: 1.28rem;
-  line-height: 1.75;
-  font-weight: 500;
+.video-about-statement {
+  color: var(--text);
+  font-family: "Oswald", Impact, sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .gallery-tile {
