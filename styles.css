@@ -1170,6 +1170,16 @@ tbody tr:hover {
   color: #ffffff;
 }
 
+.section-about-statement {
+  color: #eef5ff;
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.65;
+  font-weight: 500;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 .gallery-tile {
   min-height: 17rem;
   border: 1px solid var(--line);
