@@ -1145,6 +1145,18 @@ tbody tr:hover {
   border: 0;
 }
 
+.video-about-card {
+  align-content: center;
+}
+
+.video-about-lead {
+  max-width: 28rem;
+  color: #eef5ff;
+  font-size: 1.28rem;
+  line-height: 1.75;
+  font-weight: 500;
+}
+
 .gallery-tile {
   min-height: 17rem;
   border: 1px solid var(--line);
