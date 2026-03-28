@@ -543,6 +543,14 @@ ul {
   padding: 5rem 0 2rem;
 }
 
+.gallery-page-hero {
+  padding-bottom: 0.5rem;
+}
+
+.gallery-page-hero + .section {
+  padding-top: 1.75rem;
+}
+
 .page-hero-inner {
   max-width: 52rem;
 }
