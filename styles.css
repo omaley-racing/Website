@@ -585,6 +585,10 @@ ul {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
 .card {
   overflow: hidden;
   border: 1px solid var(--line);
@@ -795,6 +799,12 @@ ul {
     linear-gradient(180deg, #101a28, #0b1624);
 }
 
+.portrait-michael-shelton {
+  background:
+    linear-gradient(145deg, rgba(255, 196, 0, 0.18), rgba(21, 145, 231, 0.12)),
+    linear-gradient(180deg, #101a28, #0b1624);
+}
+
 .portrait-image-rodney {
   object-position: center 22%;
 }
@@ -808,6 +818,10 @@ ul {
 }
 
 .portrait-image-david-velleff {
+  object-position: center 20%;
+}
+
+.portrait-image-michael-shelton {
   object-position: center 20%;
 }
 
