@@ -11,7 +11,7 @@
   --accent-warm: #ff6d2d;
   --max-width: 1220px;
   --radius: 22px;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
 * {
@@ -75,7 +75,7 @@ ul {
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(4, 10, 18, 0.86);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(8px);
 }
 
 .nav {
@@ -172,7 +172,7 @@ ul {
   align-items: center;
   background:
     linear-gradient(120deg, rgba(4, 9, 15, 0.28), rgba(4, 10, 18, 0.24)),
-    url("images/hero.jpg"),
+    url("images/optimized/hero-1920.jpg"),
     linear-gradient(180deg, #09131f, #07111c);
   background-position: center 42%;
   background-repeat: no-repeat;
@@ -577,6 +577,18 @@ ul {
   gap: 1.4rem;
 }
 
+.home-marquee,
+.home-feature-grid,
+.grid-3,
+.grid-4,
+.stats-grid,
+.gallery-grid,
+.gallery-section-layout,
+.gallery-photo-grid {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
 .grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -602,6 +614,7 @@ ul {
 .gallery-tile {
   position: relative;
   overflow: hidden;
+  contain: layout paint;
   display: grid;
   align-items: end;
   min-height: 15rem;
@@ -614,6 +627,12 @@ ul {
   background-size: cover;
 }
 
+.media-frame,
+.gallery-tile {
+  aspect-ratio: 4 / 3;
+  min-height: clamp(14rem, 28vw, 19rem);
+}
+
 .media-image,
 .gallery-image {
   position: absolute;
@@ -622,6 +641,7 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  background: #0f1d2e;
 }
 
 .media-frame::before,
@@ -740,7 +760,8 @@ ul {
   display: grid;
   align-items: end;
   justify-items: end;
-  min-height: 18rem;
+  min-height: clamp(18rem, 32vw, 24rem);
+  aspect-ratio: 4 / 5;
   padding: 1rem;
   background:
     linear-gradient(145deg, rgba(21, 145, 231, 0.18), rgba(255, 109, 45, 0.22)),
@@ -764,6 +785,7 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  background: #0f1d2e;
 }
 
 .portrait-number {
@@ -1124,7 +1146,9 @@ tbody tr:hover {
 .gallery-photo-card {
   position: relative;
   overflow: hidden;
-  min-height: 14rem;
+  contain: layout paint;
+  min-height: clamp(14rem, 28vw, 18rem);
+  aspect-ratio: 4 / 3;
   border: 1px solid var(--line);
   border-radius: 18px;
   background:
@@ -1139,6 +1163,7 @@ tbody tr:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background: #0f1d2e;
 }
 
 .gallery-photo-card span {
@@ -1383,6 +1408,10 @@ tbody tr:hover {
 }
 
 @media (max-width: 760px) {
+  .topbar {
+    backdrop-filter: none;
+  }
+
   .nav {
     flex-direction: column;
     justify-content: center;
